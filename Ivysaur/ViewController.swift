@@ -23,11 +23,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
-        // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        //let bisasamScene = SCNScene(named: "art.scnassets/Pokemon.scn")!
         
-        // Set the scene to the view
-        sceneView.scene = scene
+        let bisasamScene = SCNScene(named: "art.scnassets/charizard-pokemon-go.scn")!
+        
+        sceneView.scene = bisasamScene
+        
+        sceneView.autoenablesDefaultLighting = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
